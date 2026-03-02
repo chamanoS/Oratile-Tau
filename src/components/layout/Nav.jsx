@@ -14,7 +14,6 @@ export default function Nav() {
     () => [
       { to: "/", label: "Home" },
       { to: "/about", label: "About" },
-      { to: "/landing", label: "Landing" },
       { to: "/insights", label: "Insights" },
       { to: "/contact", label: "Contact" },
     ],
@@ -32,7 +31,7 @@ export default function Nav() {
           </div>
 
           <div className="leading-tight">
-            <div className="text-sm font-semibold text-black group-hover:text-brand-700 transition">
+            <div className="text-2xl font-semibold text-black group-hover:text-brand-700 transition">
               Oratile Tau
             </div>
             <div className="text-xs text-black/60">

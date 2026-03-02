@@ -54,38 +54,33 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-black/10">
-        {/* Background image */}
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden border-b border-black/10">
+        {/* Background */}
         <div
-          className="absolute inset-0 -z-20 bg-cover bg-center"
+          className="absolute inset-0  bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
-        <div className="absolute inset-0 -z-10 bg-black/40" />
 
-        {/* Overlay for readability */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white/80 via-white/70 to-white" />
+        {/* Overlays */}
+        <div className="absolute inset-0 -z-10 bg-black/55" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-brand-500/10 via-transparent to-transparent" />
 
-        {/* subtle accent glow */}
-        <div className="absolute -top-32 right-[-120px] -z-10 h-80 w-80 rounded-full bg-brand-500/20 blur-3xl" />
-        <div className="absolute -bottom-32 left-[-120px] -z-10 h-80 w-80 rounded-full bg-brand-500/10 blur-3xl" />
-
-        <Container className="py-14 sm:py-20">
+        <Container className=" relative z-10 py-14 sm:py-20">
           <motion.div variants={fade} initial="hidden" animate="show">
             <div className="flex flex-wrap items-center gap-2">
-              <Badge className="border-brand-500/20 bg-brand-500/10 text-brand-800">
+              <Badge className="border-brand-500/20 bg-brand-100/30 text-black">
                 PR & Strategic Communication
               </Badge>
-              <Badge className="border-brand-500/20 bg-brand-500/10 text-brand-800">
+              <Badge className="border-brand-500/20 bg-brand-100/30 text-black">
                 Results-driven
               </Badge>
-             
             </div>
 
-            <h1 className="mt-5 text-3xl font-semibold tracking-tight sm:text-5xl">
+            <h1 className="mt-5 text-3xl font-semibold tracking-tight text-black drop-shadow-[0_2px_10px_rgba(255,255,255,0.7)] sm:text-5xl">
               {brand.tagline}
             </h1>
 
-            <p className="mt-4 max-w-2xl text-sm leading-6 text-black/70">
+            <p className="mt-4 max-w-2xl text-sm font-normal leading-6 text-black drop-shadow-[0_2px_10px_rgba(255,255,255,0.99)]">
               {brand.name} helps organisations build strong brands, protect
               reputations, and deliver clear, impactful messages—grounded in
               strategy, storytelling, and stakeholder trust.
@@ -255,7 +250,7 @@ export default function Home() {
 
 function MiniStat({ label, value }) {
   return (
-    <div className="rounded-2xl border border-black/10 bg-white/70 p-4 backdrop-blur">
+    <div className="rounded-2xl border border-white/20 bg-white/55 p-4 backdrop-blur-md shadow-soft">
       <div className="text-xs font-medium uppercase tracking-wider text-black/50">
         {label}
       </div>

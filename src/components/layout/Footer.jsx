@@ -6,7 +6,7 @@ import { brand } from "../../data/content.js";
 export default function Footer() {
   return (
     <footer className="border-t border-black/10 bg-white">
-      <Container className="py-10">
+      <Container className="py-6">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="text-sm font-semibold text-black">{brand.name}</div>
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-black/10 pt-6 text-xs text-black/60 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-4 flex flex-col gap-2 border-t border-black/10 pt-4 text-xs text-black/60 sm:flex-row sm:items-center sm:justify-between">
           <div>© {new Date().getFullYear()} {brand.name} | All Rights Reserved</div>
           <div className="text-black/50">Built with clarity, credibility, and confidence.</div>
         </div>
