@@ -10,6 +10,8 @@ import Insights from "./pages/Insights.jsx";
 import Contact from "./pages/Contact.jsx";
 import Privacy from "./pages/Privacy.jsx";
 import Terms from "./pages/Terms.jsx";
+import Consultation from "./pages/Consultation.jsx";
+import Landing from "./pages/Landing.jsx";
 
 export default function App() {
   return (
@@ -21,8 +23,9 @@ export default function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/contact" element={<Contact />} />
-
+        <Route path="/consultation" element={<Consultation />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/landing" element={<Landing />} />
         <Route path="/terms" element={<Terms />} />
 
         <Route path="*" element={<Navigate to="/" replace />} />

@@ -100,3 +100,24 @@ export const cta = {
   primary: { label: "Request a Consultation", href: "/contact" },
   secondary: { label: "View Our Services", href: "/services" }
 };
+
+export const team = [
+  {
+    name: "Oratile Tau",
+    role: "Founder & Managing Director",
+    bio: "Leads strategy, media relations, and stakeholder engagement. Focused on credibility, clarity, and outcomes.",
+    image: "/src/assets/team/oratile.jpg"
+  },
+  {
+    name: "Member Name",
+    role: "PR & Media Specialist",
+    bio: "Press office support, media monitoring, and campaign execution with a detail-driven approach.",
+    image: "/src/assets/team/member2.jpg"
+  },
+  {
+    name: "Member Name",
+    role: "Content & Communications",
+    bio: "Creates speeches, articles, and brand messaging that sound human, clear, and consistent.",
+    image: "/src/assets/team/member3.jpg"
+  }
+];
